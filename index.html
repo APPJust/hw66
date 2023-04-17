@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>按鈕更改文本示例</title>
+</head>
+<body>
+	<button onclick="changeText()">更改文本</button>
+	<p id="text">這是初始文本。</p>
+	<script src="script.js"></script>
+</body>
+<script>
+
+function changeText() {
+  // 要更改文本的元素
+  var textElement = document.getElementById("text");
+  // 隨機文本的陣列
+  var randomTexts = ["宇明成", "陳公英", "阮文良", "陳氏金簪"];
+  // 從陣列中隨機選擇一個元素
+  var randomIndex = Math.floor(Math.random() * randomTexts.length);
+  var randomText = randomTexts[randomIndex];
+  // 更改元素的文本
+  textElement.innerHTML = randomText;
+}
+
+
+</script>
+</html>
